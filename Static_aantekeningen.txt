@@ -1,0 +1,22 @@
+class Demo{   
+    public static void main(String[] args){
+        System.out.println( new Zomaar().getal ); 
+        System.out.println( new Zomaar().tweede );
+        System.out.println( new Zomaar().getal );
+    }
+}
+class Zomaar{
+    static int getal = 7; 
+
+    int voordoen(){
+        System.out.println("voordoen" + getal);
+        return 6;
+    }
+
+    int tweede = doen();
+    
+    int doen(){
+        System.out.println("doen");
+        return getal++; 
+    }
+}
